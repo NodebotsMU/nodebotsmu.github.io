@@ -1,0 +1,33 @@
+---
+layout: full-width
+title: NodeBots Mauritius
+# Note that this index page uses a full-width layout!
+---
+
+<div class="container" id="intro">
+  <h1>
+    NodeBots Mauritius
+  </h1>
+  <blockquote cite="">
+    <p>In recent years, we have seen a proliferation of processing devices that collect and manage information from their real-time environments via some physical interface component–among them, 
+       anti-lock brakes, Mars rovers, tele-surgery, artificial limbs, and even iPods. 
+       As these devices become ubiquitous, a liberally educated person should have some familiarity 
+       with the ways in which such devices work–their capabilities and limitations.</p>
+       <footer>— Albert W. Schueller, Programming with Robots</footer>
+  </blockquote>
+  </div>
+
+  
+  <div class="posts">
+    <ul class="content-listing ">
+    {% for post in site.posts %}      
+        <li class="listing">
+          <hr class="slender">
+          <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
+          <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
+          <div>{{ post.excerpt }}</div> 
+        </li>
+    {% endfor %}
+  </ul>
+
+  </div>
