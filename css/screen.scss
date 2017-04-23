@@ -1,0 +1,24 @@
+---
+---
+@import "mixins/flexbox";
+@import "mixins/columns";
+@import "variables";
+@import "elements";
+@import "landing-page";
+@import "layout";
+@import "pricing";
+@import "staff";
+@import "contact";
+@import "blog";
+@import "forms";
+@import "navigation";
+@import "footer";
+@import "cloudcannon";
+.logo {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    top: 40px;
+}
